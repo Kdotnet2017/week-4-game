@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,64 +11,79 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/javascript.js"></script>
+    <script  src="assets/javascript/javascript.js"></script>
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-2 logo"><h1>CrystalsCollector!</h1></div>
+            <div class="col-lg-2 logo">
+                <h1>CrystalsCollector!</h1>
+            </div>
         </div>
         <div class="row">
             <div class="col-lg-6 instruction">
-                <p>When you start the game, the program will generate a random number between 19 - 120.
-                    Also, it generates four hidden random numbers between 1-12 for each crystals ( blue, green, red, yellow).
+                <p>When you start the game, the program will generate a random number between 19 - 120. Also, it generates four
+                    hidden random numbers between 1-12 for each crystals ( blue, green, red, yellow).
                 </p>
-                <p>Now, it's your turn by clicking each crystal to find out its hidden number. It will add the hidden number to your total score to match it
-                    to the given random number at the start of the game.
+                <p>Now, it's your turn by clicking each crystal to find out its hidden number. It will add the hidden number
+                    to your total score to match it to the given random number at the start of the game.
                 </p>
                 <p> You win if your total score is not greater than the given random number at the start of the game.</p>
-                <p>The game will  restart automatically by generating a new random number, four hidden crystal numbers, and resetting your total score to zero after winning or losing.</p>
+                <p>The game will restart automatically by generating a new random number, four hidden crystal numbers, and resetting
+                    your total score to zero after winning or losing.</p>
                 <p>-- Good luck</p>
             </div>
         </div>
         <div class="row">
-            
-                    <div class="col-lg-2 random"><p id="randomnumber"></p></div>
-                    <div class="col-lg-1 result">
-                        <p id="winlosetitle"></p>
-                        <h4>Wins : <span id="wins">0</span></h4>
-                        <h4>Losses : <span id="losses">0</span></h4>
-                    </div>
-                    <div class="col-lg-9"></div>
-            
+
+            <div class="col-lg-2 random">
+                <p id="randomnumber"></p>
+            </div>
+            <div class="col-lg-1 result">
+                <p id="winlosetitle"></p>
+                <h4>Wins :
+                    <span id="wins">0</span>
+                </h4>
+                <h4>Losses :
+                    <span id="losses">0</span>
+                </h4>
+            </div>
+            <div class="col-lg-9"></div>
+
         </div>
         <div class="row">
-                <div class="col-lg-5 crystalbutton">
-                    <div class="btn-group">
-                        <button type="button" id="bluecrystal" class="btn btn-default">
-                            <img src="assets/images/crystal-blue.jpg">
-                        </button>
-                        <button type="button" id="greencrystal"  class="btn btn-default">
-                            <img src="assets/images/crystal-green.jpg">
-                        </button>
-                        <button type="button" id="redcrystal"  class="btn btn-default">
-                            <img src="assets/images/crystal-red.jpg">
-                        </button>
-                        <button type="button" id="yellowcrystal"  class="btn btn-default">
-                            <img src="assets/images/crystal-yellow.jpg">
-                        </button>
-                    </div>
+            <div class="col-lg-5 crystalbutton">
+                <div class="btn-group">
+                    <button type="button" id="bluecrystal" class="btn btn-default">
+                        <img src="assets/images/crystal-blue.jpg" alt="">
+                    </button>
+                    <button type="button" id="greencrystal" class="btn btn-default">
+                        <img src="assets/images/crystal-green.jpg" alt="">
+                    </button>
+                    <button type="button" id="redcrystal" class="btn btn-default">
+                        <img src="assets/images/crystal-red.jpg" alt="">
+                    </button>
+                    <button type="button" id="yellowcrystal" class="btn btn-default">
+                        <img src="assets/images/crystal-yellow.jpg" alt="">
+                    </button>
                 </div>
-                <div class="col-lg-7"></div>
+            </div>
+            <div class="col-lg-7"></div>
         </div>
         <div class="row">
-                <div class="col-lg-2 total"><p>Your total score is:</p></div>
-                <div class="col-lg-10"></div>
+            <div class="col-lg-2 total">
+                <p>Your total score is:</p>
+            </div>
+            <div class="col-lg-10"></div>
         </div>
         <div class="row">
-                <div class="col-lg-2 total totalscrore"><p id="score">0</p></div>
-                <div class="col-lg-10"></div>
+            <div class="col-lg-2 total totalscrore">
+                <p id="score">0</p>
+            </div>
+            <div class="col-lg-10"></div>
         </div>
     </div>
 </body>
+
 </html>
