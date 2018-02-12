@@ -1,4 +1,4 @@
-// creating a game object
+//  crystalGame object
 var crystalGame={
     userRandomNumber:0,
     blueCrystalNumber:0,
